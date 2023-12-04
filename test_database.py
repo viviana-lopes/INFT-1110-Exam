@@ -6,6 +6,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
+    return "Welcome"
+
+@app.route('/data/')
+def index():
     # This function renders the index.html template.
     table_name = 'lopesTable'
     query = f"SELECT * FROM {table_name}"
